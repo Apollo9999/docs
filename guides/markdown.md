@@ -59,30 +59,39 @@ We also support linking to elements, connections and loops (even other maps in y
 
 You can use the following syntax:
 
-**Selectors**
+#### Selectors
 
-    [link label](= selector)
-    [Ryan](= #ryanmohr)
+```
+[link text](= selector)
+```
 
-*Note: Make sure to remove any special characters and spaces from your element, connection or loop label and lowercase all letters ("Kumu is awesome!" would become "kumuisawesome").*
+Replace `link text` with the text for your link, and replace `selector` with any valid [selector](/guides/selectors.html).
 
-**Maps**
 
-    [link label](#map-slug)
+#### Maps
 
-**views**
+```
+[link text](#map-slug)
+```
 
-    [link label](#map-slug/view-slug)
+Replace `link text` with the text for your link, and replace `map-slug` with the [slug](/guides/slugs.html) of your map.
 
-*Note: The best way to find the "map-slug" and "view-slug" is to activate the given map and view and look at the URL in your browser. You should be able to spot it quite easily by using the above format as a guide. Then copy and paste the applicable portion.*
+#### Views
+
+```
+[link text](#map-slug/view-slug)
+```
+
+Replace `link text` with the text for your link, replace `map-slug` with the [slug](/guides/slugs.html) of your map, and replace `view-slug` .with the [slug](/guides/slugs.html) of your view.
+
 
 ## Images
 
 ```
 ![alt text](image-url)
-
-![Kumu Logo](http://blog.kumu.io/content/images/2015/08/kumu-logo-cutout-full-dark.png)
 ```
+
+Replace `alt text` with an image caption that screen readers can read, and replace `image-url` with a link to your image.
 
 
 ## Videos
@@ -301,6 +310,36 @@ all tags
   width
   itemprop
 ```
+
+
+## LaTeX
+
+Good news for people using Kumu in science, math, or academia—anywhere you write Markdown in Kumu, you can also write LaTeX to include equations!
+
+You can write LaTeX inline or on its own separate line. To write inline, put two dollar signs on either side of your LaTeX code, like so:
+
+```
+24 minutes are $$\frac{24}{60}=0.4h$$ and $$\sin(30^o)=0.5$$
+```
+
+Here's what you would see:
+
+![rendered inline latex](/images/latex-inline.png)
+
+Or, for more complex expressions, you can write inside a codeblock marked as `latex`, like so:
+
+
+    ```latex
+    f(x) = \int_{-\infty}^\infty
+        \hat f(\xi)\,e^{2 \pi i \xi x}
+        \,d\xi
+    ```
+
+Here's what you would see:
+
+![rendered block latex](/images/latex-block.png)
+
+Kumu uses a tool called KaTeX to render these equations. For a full list of supported equations, [visit the KaTeX docs](https://katex.org/docs/supported.html).
 
 
 <span class="edit-link"><a href="https://github.com/kumu/docs/blob/master/guides/markdown.md" target="_blank"><i class="fa fa-github"></i> edit this page</a></span>

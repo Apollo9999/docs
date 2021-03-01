@@ -35,6 +35,19 @@ For a basic list, just type `list/` inside your double square brackets, and  the
 
 All the items in the list are links—you can hover over a link to [showcase](/guides/showcase.html) an item on the map, or you can click a link to jump to the profile for that item.
 
+Basic lists can also be sorted by any field in your [profiles](/guides/profiles.html). To do so, add `?sort=field-name` after `elements`, `connections`, or `loops`, and replace `field-name` with a [slug](/guides/slugs.html) of the field name you want to sort by.
+
+```
+[[list/connection?sort=strength]]
+[[list/element?sort=net-worth]]
+```
+
+Add `&desc=true` to the end if you want to sort in descending order:
+
+```
+[[list/loop?sort=label&desc=true]]
+```
+
 
 #### More specific lists of elements, connections, or loops
 
@@ -63,6 +76,20 @@ Having trouble writing the right selector for your use case? Feel free to [email
 <p class="alert alert-info">
   If you want to list all of an element's connections in it's profile, we wrote <a class="alert-link" href="/faq/how-do-i-list-an-elements-connections-in-its-profile.html">a more detailed article</a> on how to achieve that.
 </p>
+
+
+These more specific lists, like basic lists, can also be sorted by any field in your [profiles](/guides/profiles.html). To do so, add `?sort=field-name` after `list` and before the selector, and replace `field-name` with a [slug](/guides/slugs.html) of the field name you want to sort by.
+
+```
+[[list?sort=net-worth "person"]]
+[[list?sort=strength ":from(person)"]]
+```
+
+Add `&desc=true` to the end if you want to sort in descending order:
+
+```
+[[list?sort=type&desc=true "['influence'='high']"]]
+```
 
 
 #### Change the showcase behavior for lists of items
@@ -168,7 +195,7 @@ To embed audio from Soundcloud, type `soundcloud/` inside your double square bra
 
 ### Scribd
 
-To embed audio from Scribd, type `scribd/` inside your double square brackets, followed by the ID of the document:
+To embed documents from Scribd, type `scribd/` inside your double square brackets, followed by the ID of the document:
 
 ```
 [[scribd/416217686]]

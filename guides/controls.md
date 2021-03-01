@@ -1,8 +1,6 @@
 # Controls
 
-Controls allow you to customize how people interact with your maps.
-You can use them to overlay buttons, images, text and more! Interactive controls
-can be used to transform the current view's setting too, such as filter, focus,
+Controls allow you to customize how people interact with your maps. You can use them to overlay buttons, images, text and more! Interactive controls can be used to transform the current view's setting too, such as filter, focus,
 and clustering.
 
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/eBo1St2laTw" frameborder="0" allowfullscreen></iframe></p>
@@ -170,7 +168,7 @@ The properties that get set underneath `group` will apply to all controls nested
 
 #### Built-in controls
 
-All of Kumu's built-in controls (search, zoom buttons, settings buttons, and legend) are handled by the same platform that custom controls are built on. That means you can move the built-in controls around, omit ones you don't need, or even reset the built-in controls and start from scratch.
+All of Kumu's built-in controls (search, zoom buttons, settings buttons, the [legend](/guides/legends.html)) are handled by the same platform that custom controls are built on. That means you can move the built-in controls around, omit ones you don't need, or even reset the built-in controls and start from scratch.
 
 Although you won't see it in your Advanced Editor, here's the default `@controls` code working behind the scenes:
 

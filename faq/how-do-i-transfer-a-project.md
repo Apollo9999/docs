@@ -1,29 +1,22 @@
-# How do I transfer a project?
+# How do I transfer a project
 
-Within Kumu you can either transfer a project to another user's personal account, or to an [organization](/guides.organizations.html).
+To transfer a project to another workspace, you can:
+1. Right-click on the [canvas](/overview/map-editor.html#canvas)
+2. Select **Project**
+3. Select **Transfer project**
 
-<p class="alert alert-info">
-Currently, only the Kumu core team can transfer projects from organizations to personal accounts. If you need to transfer from an organization to a personal account, please <a class="alert-link" href="mailto:support@kumu.io" target="_blank" rel="noopener">contact support</a>.
-</p>
+Alternatively, you can:
+1. Open the [project settings menu](/overview/settings.html#project-settings)
+2. Select **Admin** from the sidebar
+3. Select **Transfer project**
 
-### Transfer to a personal account
 
-* Load the project from your [dashboard](http://kumu.io/dashboard).
-* Click ["Project Settings"](/overview/settings.html#project-settings) in the top left corner of the map.
-* Click "Members" and make sure that the person you'd like to transfer the project to has been added to the project as a [contributor](/faq/how-to-add-contributors.html).
-* Now, click "Admin."
-* Click the link to "Transfer project."
-* Select the username of the person you'd like to transfer the project to.
-* Click transfer.
+## Caveats when transferring projects
 
-### Transfer to an organization account
+To transfer a project into a Pro workspace, you first need to be [added as an owner](/guides/pro-workspaces.html#add-users-to-a-pro-workspace) of the Pro workspace (if you created the Pro workspace, you are an owner by default).
 
-* Load the project from your [dashboard](http://kumu.io/dashboard).
-* Make sure you have been added as an "owner" to the organization you'd like to transfer the project to.
-* Click ["Project Settings"](/overview/settings.html#project-settings) in the top left corner of the map.
-* Now, click "Admin."
-* Click the link to "Transfer project."
-* Select the username of the organization you'd like to transfer the project to.
-* Click transfer.
+If you see an "Unable to transfer project" error after trying to transfer a project, here is how you can troubleshoot:
+1. Ensure that the recipient (the workspace you're transferring to) does not have a project with the same name. If they do have a project with the same name, rename one of the projects, and try transferring again.
+2. If you are transferring a private project, make sure that the recipient has added a credit card in their billing settings, and that they have not met or exceeded their private project limit (annual plans only).
 
 <span class="edit-link"><a href="https://github.com/kumu/docs/blob/master/faq/how-do-i-transfer-a-project.md" target="_blank"><i class="fa fa-github"></i> edit this page</a></span>

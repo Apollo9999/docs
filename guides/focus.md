@@ -13,7 +13,7 @@ Click the focus icon again to bring the full map back into view.
 <b>Keyboard shortcuts:</b> Press <code>+</code> and <code>-</code> on your keyboard to expand and contract focus, or press a number on your keyboard to specify exactly how many degrees the focus should extend. Press <code>esc</code> on your keyboard to bring the full map back into view.
 </p>
 
-## Activate focus in the Advanced Editor
+## Focus in the Advanced Editor
 
 You can pre-define a focus within `@settings` in the [Advanced Editor](/overview/view-editors.html#advanced-editor) of any view.
 
@@ -40,6 +40,22 @@ You can use any [selector](/guides/selector-reference.md) to set the focus of th
   focus: person["level of influence"="High"] out 2;
 }
 ```
+
+
+### Focus direction
+
+In the Advanced Editor, you can also customize **focus direction** to specify which connections should be shown.
+
+```
+@settings {
+  focus-direction: all;
+}
+```
+
+The options are:
+- `in`: Only show connections leading into focused elements.
+- `out`: Only show connections leading out from focused elements.
+- `all`: Show all connections connected to focused elements. This is the default value.
 
 ### Prompted mode
 

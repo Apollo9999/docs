@@ -78,6 +78,8 @@ We'll also teach you how to [chain selectors together](#chain-selectors) to run 
 
 After you read this section, check out our [selector reference](/guides/selector-reference.html)—it's a great cheat sheet for every possible selector in Kumu.
 
+You can also use our experimental [selector builder interface](https://selector-builder.netlify.app/) to write selectors for you!
+
 
 ## Shorthand selectors
 
@@ -233,7 +235,7 @@ With the `:from` and `:to` pseudo-selectors, you can select connections based on
 To build your own, just replace `selector` with any valid selector. For example:
 
 ```
-:from(organization)    // select all connections that are coming from elements with type “organization”
+:from(organization)    // select all connections that are coming from elements with type "organization"
 :to(#my-element)       // select all connections pointing to an element with the label "My Element"
 ```
 
@@ -268,6 +270,18 @@ In graphs and networks, an element that has zero connections is often referred t
 
 ```
 :orphan                // select all orphaned elements
+```
+
+
+#### Loop contents
+
+If you're using [loops](/faq/what-are-loops.html) in your map, you can use the `:loop` pseudo-selector to select elements and connections that are part of a specific loop or loops.
+
+The syntax is an element or connection selector with `:loop()` at the end of it. You can also put a loop selector inside the parentheses to specify the loop or loops.
+
+```
+element:loop()                          // select any element that is part of any loop
+*:loop(["loop type" = "reinforcing"])   // select anything that is part of a reinforcing loop
 ```
 
 

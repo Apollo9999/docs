@@ -18,7 +18,7 @@ To get started, use any text editor to organize your data into elements and conn
 
 If you've worked with the JSON format before, you'll notice that this Kumu blueprint is organized as an object with two key-value pairs. The `"elements"` and `"connections"` keys are each paired with an array, and the arrays contain your data, formatted as objects.
 
-Once you’ve got the basics in place you can add additional key-value pairs to the objects that represent your data—for example, “type”, “description” and “tags”, along with any custom keys you’d like as well:
+Once you’ve got the basics in place you can add additional key-value pairs to the objects that represent your data—for example, "type", "description" and "tags", along with any custom keys you’d like as well:
 
 ```
 {
@@ -45,7 +45,7 @@ Once you’ve got the basics in place you can add additional key-value pairs to 
 }
 ```
 
-In your connection objects, you can assign a value to the `“direction”` key to control whether connections are undirected, directed, or mutual:
+In your connection objects, you can assign a value to the `"direction"` key to control whether connections are undirected, directed, or mutual:
 
 ```
 {
@@ -96,10 +96,10 @@ To restore this backup in a brand new project, go to your Kumu dashboard and cli
 
 ![Template screen](/images/template-screen.png)
 
-At the bottom of this screen, click the link that says `import .json blueprint`, then select the blueprint from your computer. Kumu will import the blueprint, fully restoring all data and project settings.
+On this screen, click the blue link that says **restore backup**, then select the blueprint from your computer. Kumu will import the blueprint, fully restoring all data and project settings, including the project name.
 
 <p class="alert alert-warning">
-Not seeing the <b>import .json blueprint</b> link on your screen? Make sure you're importing into a brand new project—it's not possible to import a blueprint into a project with existing maps, views, and other data.
+Not seeing the <b>restore backup</b> link on your screen? Make sure you're importing into a brand new project—it's not possible to import a blueprint into a project with existing maps, views, and other data.
 </p>
 
 
